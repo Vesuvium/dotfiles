@@ -125,6 +125,8 @@ set notimeout ttimeout ttimeoutlen=200
 " Use <F11> to toggle between 'paste' and 'nopaste'
 set pastetoggle=<F11>
 
+" Highlight column 80
+set colorcolumn=80
 
 "------------------------------------------------------------
 " Indentation options {{{1
