@@ -64,6 +64,7 @@ fi
 # Alias definitions
 alias h='history'
 alias g='grep'
+alias gh='history | grep'
 alias activate='source bin/activate'
 
 
