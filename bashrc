@@ -81,3 +81,15 @@ fi
 # Displays a welcome message!
 figlet "Welcome, " $USER;
 echo "";
+
+# Decode base64 string
+function b64decode (){
+    echo $1 | base64 --decode;
+    echo;
+}
+
+# Encode base64 string
+function b64encode(){
+    echo -n $1 | base64
+    echo;
+}
