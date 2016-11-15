@@ -103,3 +103,9 @@ function clone(){
   fi
   git clone git@$host:$1.git
 }
+
+# Cleans up the history, removing duplicates
+function cleanup(){
+  nl ~/.bash_history | sort -k 2  -k 1,1nr| uniq -f 1 | sort -n | cut -f 2 > unduped_history
+  mv unduped_history ~/.bash_history
+}
