@@ -109,3 +109,8 @@ function cleanup(){
   nl ~/.bash_history | sort -k 2  -k 1,1nr| uniq -f 1 | sort -n | cut -f 2 > unduped_history
   mv unduped_history ~/.bash_history
 }
+
+# Find what installed a command
+function what() {
+  which "$@" | xargs -r readlink -f | xargs -r dpkg -S
+}
