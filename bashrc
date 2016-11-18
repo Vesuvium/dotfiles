@@ -114,3 +114,7 @@ function cleanup(){
 function what() {
   which "$@" | xargs -r readlink -f | xargs -r dpkg -S
 }
+
+function gc() {
+    git commit -m $1
+}
