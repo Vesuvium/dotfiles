@@ -115,6 +115,11 @@ function what() {
   which "$@" | xargs -r readlink -f | xargs -r dpkg -S
 }
 
+# Python virtualenv
+function makenv() {
+    virtualenv --python=python$2 $1
+}
+
 function gc() {
     git commit -m $1
 }
