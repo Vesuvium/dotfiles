@@ -1,0 +1,128 @@
+[
+    {
+        type: 'button'
+        icon: 'navicon-round'
+        callback: 'command-palette:toggle'
+        tooltip: 'Toggle Command Palette'
+        iconset: 'ion'
+    }
+    {
+        type: 'button'
+        tooltip: 'Open Settings View'
+        callback: 'settings-view:open'
+        icon: 'gear-a'
+        iconset: 'ion'
+    }
+    {
+        type: 'spacer'
+    }
+    {
+        type: 'button'
+        tooltip: 'Open File'
+        callback: 'application:open-file'
+        icon: 'document-text'
+        iconset: 'ion'
+    }
+    {
+        type: 'button'
+        icon: 'document'
+        callback: 'application:new-file'
+        tooltip: 'New File'
+        iconset: 'ion'
+    }
+    {
+        type: 'button'
+        tooltip: 'Open Folder'
+        callback: 'application:add-project-folder'
+        icon: 'folder'
+        iconset: 'ion'
+    }
+    {
+        type: 'spacer'
+    }
+    {
+        type: 'button'
+        icon: 'search'
+        callback: 'find-and-replace:show'
+        tooltip: 'Find in Buffer'
+        iconset: 'ion'
+    }
+    {
+        type: 'button'
+        tooltip: 'File Finder'
+        callback: 'fuzzy-finder:toggle-file-finder'
+        icon: 'ios-color-wand'
+        iconset: 'ion'
+    }
+    {
+        type: 'button'
+        tooltip: 'Fold all'
+        callback: 'editor:fold-all'
+        icon: 'arrow-shrink'
+        iconset: 'ion'
+    }
+    {
+        type: 'button'
+        icon: 'arrow-expand'
+        callback: 'editor:unfold-all'
+        tooltip: 'Unfold all'
+        iconset: 'ion'
+    }
+    {
+        type: 'button'
+        toottip: 'Show all bookmarks'
+        icon: 'bookmark'
+        iconset: 'ion'
+        callback: 'bookmarks:view-all'
+
+    }
+    {
+        type: 'spacer'
+    }
+    {
+        type: 'button'
+        icon: 'columns'
+        iconset: 'fa'
+        callback: 'pane:split-right'
+    }
+    {
+        type: 'button'
+        tooltip: 'Toggle Fullscreen'
+        callback: 'window:toggle-full-screen'
+        icon: 'arrows-alt'
+        iconset: 'fa'
+    }
+    {
+        type: 'spacer'
+    }
+    {
+        type: 'button'
+        toottip: 'Open git tab'
+        icon: 'social-github'
+        iconset: 'ion'
+        callback: 'github:toggle-git-tab'
+    }
+    {
+        type: 'button'
+        toottip: 'Show git log'
+        icon: 'ios-list'
+        iconset: 'ion'
+        callback: 'git-log:show'
+    }
+
+    {
+        type: 'button'
+        icon: 'markdown'
+        callback: 'markdown-preview:toggle'
+        disable: '!markdown'
+    }
+    {
+        type: 'spacer'
+    }
+    {
+        type: 'button'
+        tooltip: 'About Atom'
+        icon: 'info'
+        callback: 'application:about'
+    }
+]
