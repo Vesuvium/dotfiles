@@ -74,6 +74,9 @@ set hlsearch
 " which are considered to add usability. Which, if any, of these options to
 " use is very much a personal preference, but they are harmless.
 
+" Set 256 colours
+set t_Co=256
+
 " Use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
@@ -127,6 +130,15 @@ set pastetoggle=<F11>
 
 " Highlight column 80
 set colorcolumn=80
+
+" Highlight the current line
+set cursorline
+
+" Better terminal title
+set title
+
+" Split on right-hand side 
+set splitright
 
 "------------------------------------------------------------
 " Indentation options {{{1
