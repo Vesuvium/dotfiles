@@ -80,9 +80,7 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Aliases for commands
 alias g="grep"
 alias h="history"
 alias gh="history | grep"
@@ -91,5 +89,13 @@ alias blast="python setup.py install > /dev/null 2>&1; pytest -q"
 alias update='apt-get update'
 alias upgrade='apt-get upgrade'
 alias distupgrade='apt-get dist-upgrade'
+alias zshconfig="nvim ~/.zshrc"
+
+# Custom functions
+function makenv() {
+    virtualenv --python=python$2 $1
+}
+
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
