@@ -7,7 +7,12 @@ Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
-Plug 'christoomey/vim-tmux-navigator' 
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'ryanoasis/vim-devicons'
+Plug 'elixir-lang/vim-elixir'
+Plug 'Townk/vim-autoclose'
+
+" Prose
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
 
@@ -18,6 +23,8 @@ Plug 'zchee/deoplete-jedi'
 " Themes
 Plug 'junegunn/seoul256.vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'preocanin/greenwint'
+Plug 'mhinz/vim-janah'
 
 call plug#end()
 
