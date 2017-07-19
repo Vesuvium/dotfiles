@@ -96,6 +96,29 @@ function makenv() {
     virtualenv --python=python$2 $1
 }
 
+function scaffold() {
+    if [ $1 = "python" ]; then
+        touch setup.py
+        mkdir tests
+        mkdir tests/unit
+        touch README.rst
+        touch pytest.ini
+        touch tox.ini
+        touch .travis.yml
+        touch .codeclimate.yml
+        wget -O .gitignore https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore
+        if [ ! -z $2 ]; then
+            mkdir $2
+            touch $2/__init__.py
+        fi
+    elif [ $1 = "javascript" ]; then
+        npm init
+        touch Gruntfile.json
+        touch README.md
+        wget -O .gitignore https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore
+    fi
+}
+
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
