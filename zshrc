@@ -98,15 +98,15 @@ function makenv() {
 
 function scaffold() {
     if [ $1 = "python" ]; then
-        touch setup.py
         mkdir tests
         mkdir tests/unit
         touch README.rst
         touch pytest.ini
-        touch tox.ini
         touch .travis.yml
         touch .codeclimate.yml
-        wget -O .gitignore https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore
+        wget -q https://raw.githubusercontent.com/Vesuvium/dotfiles/master/python/tox.ini
+        wget -q https://raw.githubusercontent.com/Vesuvium/dotfiles/master/python/setup.py
+        wget -O .gitignore -q https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore
         if [ ! -z $2 ]; then
             mkdir $2
             touch $2/__init__.py
