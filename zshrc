@@ -116,6 +116,11 @@ function scaffold() {
         touch Gruntfile.json
         touch README.md
         wget -O .gitignore https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore
+    elif [ $1 = "elixir" ]; then
+        if [ ! -z $2 ]; then
+            mix new $2
+        fi
+        touch .travis.yml 
     fi
 }
 
