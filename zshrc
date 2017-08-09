@@ -96,6 +96,10 @@ function makenv() {
     virtualenv --python=python$2 $1
 }
 
+function c() {
+    cd ~/dev/$1
+}
+
 function scaffold() {
     if [ $1 = "python" ]; then
         mkdir tests
