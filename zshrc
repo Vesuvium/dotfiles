@@ -93,10 +93,12 @@ alias zshconfig="nvim ~/.zshrc"
 
 # Custom functions
 function makenv() {
+    # shorthand for creating virtual environments
     virtualenv --python=python$2 $1
 }
 
 function c() {
+    # cd for project directories
     if [ ! -z $1 ]; then
         if [ -d ~/dev/$1 ]; then
             cd ~/dev/$1
@@ -108,6 +110,8 @@ function c() {
 }
 
 function activate() {
+    # activates a python projects
+    # also moves to that directory
     if [ ! -z $1 ]; then
         c $1
     fi
@@ -119,9 +123,9 @@ function activate() {
     fi
 }
 
-
-
 function scaffold() {
+    # creates the initial files for a project
+    # supports various languages
     if [ $1 = "python" ]; then
         mkdir tests
         mkdir tests/unit
