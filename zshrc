@@ -85,7 +85,6 @@ alias g="grep"
 alias h="history"
 alias gh="history | grep"
 alias lh="ls -lh"
-alias activate="source bin/activate"
 alias blast="python setup.py install > /dev/null 2>&1; pytest -q"
 alias update='apt-get update'
 alias upgrade='apt-get upgrade'
@@ -98,8 +97,29 @@ function makenv() {
 }
 
 function c() {
-    cd ~/dev/$1
+    if [ ! -z $1 ]; then
+        if [ -d ~/dev/$1 ]; then
+            cd ~/dev/$1
+            if [ -d $1 ]; then
+                cd $1
+            fi
+        fi
+    fi
 }
+
+function activate() {
+    if [ ! -z $1 ]; then
+        c $1
+    fi
+
+    if [ -f bin/activate ]; then
+        source bin/activate
+    elif [ -f ../bin/activate ]; then
+        source ../bin/activate
+    fi
+}
+
+
 
 function scaffold() {
     if [ $1 = "python" ]; then
