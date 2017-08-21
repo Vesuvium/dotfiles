@@ -84,6 +84,7 @@ source $ZSH/oh-my-zsh.sh
 alias g="grep"
 alias h="history"
 alias gh="history | grep"
+alias lh="ls -lh"
 alias activate="source bin/activate"
 alias blast="python setup.py install > /dev/null 2>&1; pytest -q"
 alias update='apt-get update'
@@ -124,7 +125,7 @@ function scaffold() {
         if [ ! -z $2 ]; then
             mix new $2
         fi
-        touch .travis.yml 
+        touch .travis.yml
     fi
 }
 
