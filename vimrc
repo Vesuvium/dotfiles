@@ -137,7 +137,7 @@ set cursorline
 " Better terminal title
 set title
 
-" Split on right-hand side 
+" Split on right-hand side
 set splitright
 
 "------------------------------------------------------------
@@ -170,4 +170,8 @@ map Y y$
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
-"------------------------------------------------------------
+" Disable arrow keys
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
