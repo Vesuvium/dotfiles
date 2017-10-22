@@ -134,6 +134,36 @@ function makenv() {
     virtualenv --python=python$2 $1
 }
 
+function scaffold() {
+    # creates the initial files for a project
+    # supports various languages
+    if [ $1 = "python" ]; then
+        mkdir tests
+        mkdir tests/unit
+        touch README.rst
+        touch pytest.ini
+        touch .travis.yml
+        touch .codeclimate.yml
+        wget -q https://raw.githubusercontent.com/Vesuvium/dotfiles/master/python/tox.ini
+        wget -q https://raw.githubusercontent.com/Vesuvium/dotfiles/master/python/setup.py
+        wget -O .gitignore -q https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore
+        if [ ! -z $2 ]; then
+            mkdir $2
+            touch $2/__init__.py
+        fi
+    elif [ $1 = "javascript" ]; then
+        npm init
+        touch Gruntfile.json
+        touch README.md
+        wget -O .gitignore https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore
+    elif [ $1 = "elixir" ]; then
+        if [ ! -z $2 ]; then
+            mix new $2
+        fi
+        touch .travis.yml
+    fi
+}
+
 # Find what installed a command
 function what() {
   which "$@" | xargs -r readlink -f | xargs -r dpkg -S
