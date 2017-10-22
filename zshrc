@@ -111,6 +111,16 @@ function activate() {
     fi
 }
 
+# Clone a git repository
+function clone(){
+  if [ -z $2 ]; then
+    host=github.com
+  else
+    host=$2
+  fi
+  git clone git@$host:$1.git
+}
+
 function scaffold() {
     # creates the initial files for a project
     # supports various languages
