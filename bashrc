@@ -141,6 +141,15 @@ function cleanup(){
   mv unduped_history ~/.bash_history
 }
 
+function dotfiles(){
+    # Installs dotfiles or updates them
+    cp bashrc ~/.bashrc
+    cp zshrc ~/.zshrc
+    cp vimrc ~/.vimrc
+    cp -r nvim/* ~/.config/nvim/
+    cp tmux.conf ~/.tmux.conf
+}
+
 # Python virtualenv
 function makenv() {
     virtualenv --python=python$2 $1
