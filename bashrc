@@ -65,7 +65,6 @@ fi
 alias h='history'
 alias g='grep'
 alias gh='history | grep'
-alias activate='source bin/activate'
 alias blast="python setup.py install > /dev/null 2>&1; pytest -q"
 alias update='apt-get update'
 alias upgrade='apt-get upgrade'
@@ -87,6 +86,20 @@ if [ -x "$(command -v figlet)" ]; then
     figlet "Welcome, " $USER;
     echo "";
 fi
+
+function activate() {
+    # activates a python projects
+    # also moves to that directory
+    if [ ! -z $1 ]; then
+        c $1
+    fi
+
+    if [ -f bin/activate ]; then
+        source bin/activate
+    elif [ -f ../bin/activate ]; then
+        source ../bin/activate
+    fi
+}
 
 # Decode base64 string
 function b64decode (){
