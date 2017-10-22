@@ -106,6 +106,18 @@ function activate() {
     fi
 }
 
+# Decode base64 string
+function b64decode (){
+    echo $1 | base64 --decode;
+    echo;
+}
+
+# Encode base64 string
+function b64encode(){
+    echo -n $1 | base64
+    echo;
+}
+
 # Clone a git repository
 function clone(){
   if [ -z $2 ]; then
