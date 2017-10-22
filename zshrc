@@ -92,11 +92,6 @@ alias distupgrade='apt-get dist-upgrade'
 alias zshconfig="nvim ~/.zshrc"
 
 # Custom functions
-function makenv() {
-    # shorthand for creating virtual environments
-    virtualenv --python=python$2 $1
-}
-
 function activate() {
     # activates a python projects
     # also moves to that directory
@@ -119,6 +114,11 @@ function clone(){
     host=$2
   fi
   git clone git@$host:$1.git
+}
+
+function makenv() {
+    # shorthand for creating virtual environments
+    virtualenv --python=python$2 $1
 }
 
 function scaffold() {
