@@ -97,18 +97,6 @@ function makenv() {
     virtualenv --python=python$2 $1
 }
 
-function c() {
-    # cd for project directories
-    if [ ! -z $1 ]; then
-        if [ -d ~/dev/$1 ]; then
-            cd ~/dev/$1
-            if [ -d $1 ]; then
-                cd $1
-            fi
-        fi
-    fi
-}
-
 function activate() {
     # activates a python projects
     # also moves to that directory
