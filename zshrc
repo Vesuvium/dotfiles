@@ -91,6 +91,13 @@ alias upgrade='apt-get upgrade'
 alias distupgrade='apt-get dist-upgrade'
 alias zshconfig="nvim ~/.zshrc"
 
+
+# Displays a welcome message!
+if [ -x "$(command -v figlet)" ]; then
+    figlet "Welcome, " $USER;
+    echo "";
+fi
+
 # Custom functions
 function activate() {
     # activates a python projects
