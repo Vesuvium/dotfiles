@@ -138,7 +138,3 @@ function what() {
 function makenv() {
     virtualenv --python=python$2 $1
 }
-
-function gc() {
-    git commit -m $1
-}
