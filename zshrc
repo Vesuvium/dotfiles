@@ -148,6 +148,15 @@ function clone(){
   git clone git@$host:$1.git
 }
 
+function dotfiles(){
+    # Installs dotfiles or updates them
+    cp bashrc ~/.bashrc
+    cp zshrc ~/.zshrc
+    cp vimrc ~/.vimrc
+    cp -r nvim/* ~/.config/nvim/
+    cp tmux.conf ~/.tmux.conf
+}
+
 function makenv() {
     # shorthand for creating virtual environments
     virtualenv --python=python$2 $1
