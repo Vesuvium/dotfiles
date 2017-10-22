@@ -125,6 +125,19 @@ function b64encode(){
     echo;
 }
 
+
+function c() {
+    # cd for project directories
+    if [ ! -z $1 ]; then
+        if [ -d ~/dev/$1 ]; then
+            cd ~/dev/$1
+            if [ -d $1 ]; then
+                cd $1
+            fi
+        fi
+    fi
+}
+
 # Clone a git repository
 function clone(){
   if [ -z $2 ]; then
