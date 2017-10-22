@@ -83,8 +83,10 @@ fi
 
 
 # Displays a welcome message!
-figlet "Welcome, " $USER;
-echo "";
+if [ -x "$(command -v figlet)" ]; then
+    figlet "Welcome, " $USER;
+    echo "";
+fi
 
 # Decode base64 string
 function b64decode (){
