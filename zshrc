@@ -157,6 +157,11 @@ function dotfiles(){
     cp tmux.conf ~/.tmux.conf
 }
 
+function m() {
+    # shorthand for git commit -m
+    git commit -m $1
+}
+
 function makenv() {
     # shorthand for creating virtual environments
     virtualenv --python=python$2 $1
