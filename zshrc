@@ -197,6 +197,15 @@ function scaffold() {
     fi
 }
 
+function serve() {
+    if [ -z $1 ]; then
+      port=1692
+    else
+      port=$1
+    fi
+    python3 -m http.server $port
+}
+
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
