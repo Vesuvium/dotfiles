@@ -167,10 +167,10 @@ function scaffold() {
         mkdir tests
         mkdir tests/unit
         touch README.rst
-        touch pytest.ini
         touch .travis.yml
         touch .codeclimate.yml
         wget -q https://raw.githubusercontent.com/Vesuvium/dotfiles/master/python/tox.ini
+        wget -q https://raw.githubusercontent.com/Vesuvium/dotfiles/master/python/pytest.ini
         wget -q https://raw.githubusercontent.com/Vesuvium/dotfiles/master/python/setup.py
         wget -O .gitignore -q https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore
         if [ ! -z $2 ]; then
