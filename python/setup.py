@@ -18,13 +18,16 @@ setup(
     name='',
     description='',
     long_description=readme,
+    url='',
     author='',
     author_email='',
     version='0.0.0',
+    license='',
     packages=find_packages(),
     tests_require=[],
     setup_requires=[],
     install_requires=[
     ],
+    classifiers=[],
     entry_points=""""""
 )
