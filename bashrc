@@ -160,6 +160,15 @@ function makenv() {
     virtualenv --python=python$2 $1
 }
 
+function pep8 () {
+    # shorthand for pep-8
+    if [ ! -z $1 ]; then
+        tox -e pep8 | grep -i $1
+    else
+        tox -e pep8
+    fi
+}
+
 function scaffold() {
     # creates the initial files for a project
     # supports various languages
