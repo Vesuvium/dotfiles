@@ -34,6 +34,9 @@ Plug 'junegunn/seoul256.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'preocanin/greenwint'
 Plug 'mhinz/vim-janah'
+Plug 'badacadabra/vim-archery'
+Plug 'reedes/vim-colors-pencil'
+Plug 'ajh17/spacegray.vim'
 
 call plug#end()
 
