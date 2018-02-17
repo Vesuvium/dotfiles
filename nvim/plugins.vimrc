@@ -34,4 +34,4 @@ let g:NERDTreeMinimalUI = 1
 let g:NERDTreeChDirMode = 2
 
 " autocmd VimEnter deoplete#initialize()
-" let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 1
