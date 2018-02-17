@@ -9,8 +9,17 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ryanoasis/vim-devicons'
-Plug 'elixir-lang/vim-elixir'
 Plug 'Townk/vim-autoclose'
+Plug 'sickill/vim-pasta'
+Plug 'yuttie/comfortable-motion.vim'
+Plug 'tpope/vim-abolish'
+
+" Languages support
+Plug 'kchmck/vim-coffee-script'
+Plug 'elixir-lang/vim-elixir'
+Plug 'plasticboy/vim-markdown'
+Plug 'robbles/logstash.vim'
+Plug 'digitaltoad/vim-jade'
 
 " Prose
 Plug 'junegunn/limelight.vim'
