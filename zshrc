@@ -90,6 +90,7 @@ alias update='apt-get update'
 alias upgrade='apt-get upgrade'
 alias distupgrade='apt-get dist-upgrade'
 alias zshconfig="nvim ~/.zshrc"
+alias nv="nvim"
 
 
 # Displays a welcome message!
