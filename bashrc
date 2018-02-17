@@ -65,10 +65,12 @@ fi
 alias h='history'
 alias g='grep'
 alias gh='history | grep'
+alias lh="ls -lh"
 alias blast="python setup.py install > /dev/null 2>&1; pytest -q"
 alias update='apt-get update'
 alias upgrade='apt-get upgrade'
 alias distupgrade='apt-get dist-upgrade'
+alias nv='nvim'
 
 
 # Enable completion features
