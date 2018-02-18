@@ -6,6 +6,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'octref/RootIgnore'
 Plug 'airblade/vim-gitgutter'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ryanoasis/vim-devicons'
@@ -44,6 +45,7 @@ call plug#end()
 
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeChDirMode = 2
+let g:NERDTreeRespectWildIgnore = 1
 
 " autocmd VimEnter deoplete#initialize()
 let g:deoplete#enable_at_startup = 1
