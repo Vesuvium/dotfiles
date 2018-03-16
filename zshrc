@@ -154,6 +154,7 @@ function dotfiles(){
     cp bashrc ~/.bashrc
     cp zshrc ~/.zshrc
     cp vimrc ~/.vimrc
+    cp nanorc ~/.nanorc
     cp -r nvim/* ~/.config/nvim/
     cp tmux.conf ~/.tmux.conf
 }
