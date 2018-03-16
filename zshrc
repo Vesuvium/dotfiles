@@ -139,8 +139,8 @@ function c() {
     fi
 }
 
-# Clone a git repository
 function clone(){
+    # Clone a git repository
   if [ -z $2 ]; then
     host=github.com
   else
