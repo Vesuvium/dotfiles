@@ -165,7 +165,11 @@ function m() {
 
 function makenv() {
     # shorthand for creating virtual environments
-    virtualenv --python=python$2 $1
+    if [ ! -z $2 ]; then
+        virtualenv --python=python$2 $1
+    else
+        virtualenv --python=python3 $1
+    fi
 }
 
 function pep8 () {
