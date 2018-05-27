@@ -221,6 +221,11 @@ function serve() {
     python3 -m http.server $port
 }
 
+function syncfork() {
+    git fetch upstream master
+    git merge upstream/master
+    git push
+}
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
