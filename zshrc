@@ -159,6 +159,11 @@ function dotfiles(){
     cp tmux.conf ~/.tmux.conf
 }
 
+function keygen(){
+    ssh-keygen -t rsa -b 4096 -C "$2" -f ~/.ssh/$1_rsa
+    ssh-add ~/.ssh/$1_rsa
+}
+
 function m() {
     # shorthand for git commit -m
     git commit -m $1
