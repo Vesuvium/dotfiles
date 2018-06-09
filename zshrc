@@ -101,8 +101,8 @@ fi
 
 # Custom functions
 function activate() {
-    # activates a python projects
-    # also moves to that directory
+    # activates a python virtualenv
+    # and moves to that directory
     if [ ! -z $1 ]; then
         c $1
     fi
@@ -128,7 +128,9 @@ function b64encode(){
 
 
 function c() {
-    # cd for project directories
+    # cd shorthand to move to a project folder
+    # it will first try to move to ~/dev/folder
+    # then it try to move to ~/dev/folder/folder
     if [ ! -z $1 ]; then
         if [ -d ~/dev/$1 ]; then
             cd ~/dev/$1
