@@ -85,7 +85,6 @@ alias g="grep"
 alias h="history"
 alias gh="history | grep"
 alias lh="ls -lh"
-alias blast="python setup.py install > /dev/null 2>&1; pytest -q"
 alias update='apt-get update'
 alias upgrade='apt-get upgrade'
 alias distupgrade='apt-get dist-upgrade'
@@ -186,6 +185,15 @@ function pep8 () {
         tox -e pep8 | grep -i $1
     else
         tox -e pep8
+    fi
+}
+
+function rt () {
+    if [ -f "setup.py" ]; then
+        python setup.py install > /dev/null 2>&1; pytest -q
+    fi
+    if [ -f "mix.exs" ]; then
+        mix format; mix test
     fi
 }
 
