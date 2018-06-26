@@ -190,7 +190,17 @@ function pep8 () {
 
 function rt () {
     if [ -f "setup.py" ]; then
-        python setup.py install > /dev/null 2>&1; pytest -q
+        if [ $# -eq 0 ]; then
+            python setup.py install > /dev/null 2>&1; pytest -q
+        elif [ $# -eq 1 ]; then
+            if [ -d "tests/unittests" ]; then
+                python setup.py install > /dev/null 2>&1; pytest -q tests/unittests/$1
+            else
+                python setup.py install > /dev/null 2>&1; pytest -q tests/unit/$1
+            fi
+        else
+            python setup.py install > /dev/null 2>&1; pytest -q "$@"
+        fi
     fi
     if [ -f "mix.exs" ]; then
         mix format; mix test
