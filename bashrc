@@ -71,6 +71,7 @@ alias update='apt-get update'
 alias upgrade='apt-get upgrade'
 alias distupgrade='apt-get dist-upgrade'
 alias nv='nvim'
+alias ac='activate'
 
 
 # Enable completion features
