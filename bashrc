@@ -174,13 +174,13 @@ function pep8 () {
 
 function scaffold() {
     # creates the initial files for a project
-    # supports various languages
+    # usage: scaffold project_type [path]
     if [ $1 = "python" ]; then
-        mkdir tests
-        mkdir tests/unit
-        touch README.rst
+        mkdir -p tests/unit
+        touch tests/unit/__init__.py
+        touch README.md
         touch .travis.yml
-        touch .codeclimate.yml
+        touch .codacy.yml
         wget -q https://raw.githubusercontent.com/Vesuvium/dotfiles/master/python/tox.ini
         wget -q https://raw.githubusercontent.com/Vesuvium/dotfiles/master/python/pytest.ini
         wget -q https://raw.githubusercontent.com/Vesuvium/dotfiles/master/python/setup.py
@@ -189,18 +189,33 @@ function scaffold() {
             mkdir $2
             touch $2/__init__.py
         fi
-    elif [ $1 = "javascript" ]; then
+    elif [ $1 = "node" ]; then
+        if [ ! -z $2 ]; then
+            mkdir $2
+            cd $2
+        fi
         npm init
-        touch Gruntfile.json
         touch README.md
+        touch .codacy.yml
         wget -O .gitignore https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore
+    elif [ $1 = "vue" ]; then
+        if [ ! -z $2 ]; then
+            scaffold node $2
+        else
+            scaffold node
+        fi
+        mkdir js sass images
+        touch Makefile
+        touch rollup.config.js
+        npm i --save axios cockatrice foundation-sites vue vue-router webfontloader
+        npm i --save-dev rollup rollup-plugin-analyzer rollup-plugin-buble rollup-plugin-node-resolve rollup-plugin-vue
+        npm i --save-dev sass-lint uglify-js vue-template-compiler vue-test-utils
     elif [ $1 = "elixir" ]; then
         if [ ! -z $2 ]; then
             mix new $2
         fi
-        touch .travis.yml
+        touch .codacy.yml
     fi
-}
 
 function serve() {
     if [ -z $1 ]; then
