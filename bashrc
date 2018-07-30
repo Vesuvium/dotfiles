@@ -216,6 +216,7 @@ function scaffold() {
         fi
         touch .codacy.yml
     fi
+}
 
 function serve() {
     if [ -z $1 ]; then
