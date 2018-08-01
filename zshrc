@@ -162,6 +162,7 @@ function dotfiles(){
 }
 
 function keygen(){
+    # usage: keygen application user@email.com
     ssh-keygen -t rsa -b 4096 -C "$2" -f ~/.ssh/$1_rsa
     ssh-add ~/.ssh/$1_rsa
 }
