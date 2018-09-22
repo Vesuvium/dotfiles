@@ -151,6 +151,17 @@ function clone(){
   git clone git@$host:$1.git
 }
 
+
+function vcp {
+    # create a vue component
+    component=$1
+    mkdir -p js/components/$1
+    touch js/components/$1/$component.vue
+    touch js/components/$1/$component.js
+    touch js/components/$1/${component}Tests.js
+}
+
+
 function dotfiles(){
     # Installs dotfiles or updates them
     cp bashrc ~/.bashrc
