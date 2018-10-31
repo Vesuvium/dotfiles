@@ -31,13 +31,15 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
 
 " Themes
-Plug 'junegunn/seoul256.vim'
-Plug 'arcticicestudio/nord-vim'
-Plug 'preocanin/greenwint'
-Plug 'mhinz/vim-janah'
-Plug 'badacadabra/vim-archery'
-Plug 'reedes/vim-colors-pencil'
+Plug 'agreco/vim-citylights'
 Plug 'ajh17/spacegray.vim'
+Plug 'arcticicestudio/nord-vim'
+Plug 'badacadabra/vim-archery'
+Plug 'cseelus/vim-colors-tone'
+Plug 'junegunn/seoul256.vim'
+Plug 'mhinz/vim-janah'
+Plug 'preocanin/greenwint'
+Plug 'reedes/vim-colors-pencil'
 
 call plug#end()
 
