@@ -16,11 +16,12 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'tpope/vim-abolish'
 
 " Languages support
-Plug 'kchmck/vim-coffee-script'
+Plug 'digitaltoad/vim-jade'
 Plug 'elixir-lang/vim-elixir'
+Plug 'kchmck/vim-coffee-script'
 Plug 'plasticboy/vim-markdown'
 Plug 'robbles/logstash.vim'
-Plug 'digitaltoad/vim-jade'
+Plug 'rust-lang/rust.vim'
 
 " Prose
 Plug 'junegunn/limelight.vim'
@@ -40,6 +41,7 @@ Plug 'junegunn/seoul256.vim'
 Plug 'mhinz/vim-janah'
 Plug 'preocanin/greenwint'
 Plug 'reedes/vim-colors-pencil'
+Plug 'sts10/vim-pink-moon'
 
 call plug#end()
 
