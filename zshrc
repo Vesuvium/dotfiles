@@ -168,6 +168,7 @@ function dotfiles(){
     cp zshrc ~/.zshrc
     cp vimrc ~/.vimrc
     cp nanorc ~/.nanorc
+    mkdir ~/.config/nvim
     cp -r nvim/* ~/.config/nvim/
     cp tmux.conf ~/.tmux.conf
 }
