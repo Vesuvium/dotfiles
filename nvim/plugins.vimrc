@@ -42,6 +42,10 @@ Plug 'mhinz/vim-janah'
 Plug 'preocanin/greenwint'
 Plug 'reedes/vim-colors-pencil'
 Plug 'sts10/vim-pink-moon'
+Plug 'altercation/vim-colors-solarized'
+Plug 'AlessandroYorba/Alduin'
+Plug 'owickstrom/vim-colors-paramount'
+Plug 'mhartington/oceanic-next'
 
 call plug#end()
 
