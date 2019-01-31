@@ -8,7 +8,7 @@ source $HOME/.config/nvim/keys.vimrc
 
 
 
-
+colo OceanicNext
 
 
 
