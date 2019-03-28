@@ -147,8 +147,12 @@ function cleanup(){
 function dotfiles(){
     # Installs dotfiles or updates them
     cp bashrc ~/.bashrc
+    mkdir -p ~/.oh-my-zsh/themes
     cp zshrc ~/.zshrc
+    cp zsh-themes/hyperzsh.zsh-theme ~/.oh-my-zsh/themes/hyperzsh.zsh-theme
     cp vimrc ~/.vimrc
+    cp nanorc ~/.nanorc
+    mkdir ~/.config/nvim
     cp -r nvim/* ~/.config/nvim/
     cp tmux.conf ~/.tmux.conf
 }
