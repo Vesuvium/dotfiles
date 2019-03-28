@@ -226,19 +226,25 @@ function rt () {
 function scaffold() {
     # creates the initial files for a project
     # usage: scaffold project_type [path]
+    github=https://raw.githubusercontent.com
+    url=$github/Vesuvium/dotfiles/master
     if [ $1 = "python" ]; then
         mkdir -p tests/unit
         touch tests/unit/__init__.py
+        touch tests/unit/App.py
+        wget -O tests/unit/Version.py -q $url/python/tests/Version.py
         touch README.md
         touch .travis.yml
         touch .codacy.yml
-        wget -q https://raw.githubusercontent.com/Vesuvium/dotfiles/master/python/tox.ini
-        wget -q https://raw.githubusercontent.com/Vesuvium/dotfiles/master/python/pytest.ini
-        wget -q https://raw.githubusercontent.com/Vesuvium/dotfiles/master/python/setup.py
-        wget -O .gitignore -q https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore
+        wget -q $url/python/tox.ini
+        wget -q $url/python/pytest.ini
+        wget -q $url/python/setup.py
+        wget -O .gitignore -q $github/github/gitignore/master/Python.gitignore
         if [ ! -z $2 ]; then
-            mkdir $2
+            mkdir -p $2
             touch $2/__init__.py
+            touch $2/App.py
+            wget -O $2/Version.py -q $url/python/app/Version.py
         fi
     elif [ $1 = "node" ]; then
         if [ ! -z $2 ]; then
