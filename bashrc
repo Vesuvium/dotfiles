@@ -72,6 +72,7 @@ alias upgrade='apt-get upgrade'
 alias distupgrade='apt-get dist-upgrade'
 alias nv='nvim'
 alias ac='activate'
+alias logline="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 
 # Enable completion features
