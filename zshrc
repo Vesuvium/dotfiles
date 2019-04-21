@@ -92,6 +92,7 @@ alias zshconfig="nvim ~/.zshrc"
 alias nv="nvim"
 alias ac="activate"
 alias logline="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias sudo="sudo "
 
 
 # Displays a welcome message!
