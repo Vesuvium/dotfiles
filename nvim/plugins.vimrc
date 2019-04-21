@@ -14,6 +14,8 @@ Plug 'Townk/vim-autoclose'
 Plug 'sickill/vim-pasta'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'tpope/vim-abolish'
+Plug 'pbrisbin/vim-mkdir'
+Plug 'reedes/vim-pencil'
 
 " Languages support
 Plug 'digitaltoad/vim-jade'
