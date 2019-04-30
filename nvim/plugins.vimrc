@@ -48,6 +48,21 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'AlessandroYorba/Alduin'
 Plug 'owickstrom/vim-colors-paramount'
 Plug 'mhartington/oceanic-next'
+Plug 'axvr/photon.vim'
+Plug 'barretren/vim-colorscheme'
+Plug 'pgdouyon/vim-yin-yang'
+Plug 'abnt713/vim-hashpunk'
+Plug 'smallwat3r/vim-hashpunk-sw'
+Plug 'victorze/foo'
+Plug 'kkpmw/distilled-vim'
+Plug 'beikome/cosme.vim'
+Plug 'cseelus/vim-colors-tone'
+Plug 'dankneon/vim'
+Plug 'nightsense/cosmic_latte'
+Plug 'szorfein/fromthehell.vim'
+Plug 'kimnorgaard/vim-frign'
+Plug 'maksimr/Lucius2'
+
 
 call plug#end()
 
