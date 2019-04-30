@@ -16,14 +16,19 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'tpope/vim-abolish'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'reedes/vim-pencil'
+Plug 'tpope/vim-surround'
+Plug 'sirver/ultisnips'
+
 
 " Languages support
 Plug 'digitaltoad/vim-jade'
 Plug 'elixir-lang/vim-elixir'
+Plug 'avdgaag/vim-phoenix'
 Plug 'kchmck/vim-coffee-script'
 Plug 'plasticboy/vim-markdown'
 Plug 'robbles/logstash.vim'
 Plug 'rust-lang/rust.vim'
+Plug 'tpope/vim-cucumber'
 
 " Prose
 Plug 'junegunn/limelight.vim'
