@@ -7,6 +7,9 @@ map <C-N> :vsplit<CR>
 map <C-W> <C-U>
 map <C-S> <C-D>
 
+" Home sends to the first non-blank character
+map <Home> _
+
 " Abbreviations
 "
 " Disable :x
