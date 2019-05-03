@@ -234,6 +234,12 @@ function serve() {
     python3 -m http.server $port
 }
 
+
+function words() {
+    find $1 -name '*.md' -print0 | wc -w --files0-from=-
+}
+
+
 # Find what installed a command
 function what() {
   which "$@" | xargs -r readlink -f | xargs -r dpkg -S

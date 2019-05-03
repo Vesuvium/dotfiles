@@ -238,4 +238,9 @@ function syncfork() {
 }
 
 
+function words() {
+    find $1 -name '*.md' -print0 | wc -w --files0-from=-
+}
+
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
