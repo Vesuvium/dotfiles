@@ -180,6 +180,7 @@ function scaffold() {
         touch tests/unit/__init__.py
         touch tests/unit/App.py
         wget -O tests/unit/Version.py -q $url/python/tests/Version.py
+        wget -O tests/unit/conftest.py -q $url/python/tests/conftest.py
         touch README.md
         touch .travis.yml
         touch .codacy.yml
