@@ -88,14 +88,20 @@ function c() {
     fi
 }
 
-function clone(){
-    # Clone a git repository
+function clone() {
+  # Clone a git repository
+  if [[ ! $1 =~ "/" ]]; then
+    repo=Vesuvium/$1
+  else
+    repo=$1
+  fi
+
   if [ -z $2 ]; then
     host=github.com
   else
     host=$2
   fi
-  git clone git@$host:$1.git
+  git clone git@$host:$repo.git
 }
 
 
