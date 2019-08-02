@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from app.Version import Version
+from app.Version import version
 
 
 def test_app_version():
