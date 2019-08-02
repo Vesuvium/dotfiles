@@ -136,7 +136,11 @@ function keygen(){
 
 function m() {
     # shorthand for git commit -m
-    git commit -m $1
+    if [ ! -z $2 ]; then
+        git commit -m $1/$2
+    else
+        git commit -m $1
+    fi
 }
 
 function makenv() {
