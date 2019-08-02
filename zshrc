@@ -38,7 +38,7 @@ alias ac="activate"
 alias logline="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias sudo="sudo "
 alias reload="systemctl reload "
-alias s="git status -s"
+
 
 # Displays a welcome message!
 if [ -x "$(command -v figlet)" ]; then
@@ -167,6 +167,15 @@ function rt () {
     fi
     if [ -f "mix.exs" ]; then
         mix format; mix test
+    fi
+}
+
+
+function s() {
+    if [ ! -z $1 ]; then
+        git status -s | g $1
+    else
+        git status -s
     fi
 }
 
