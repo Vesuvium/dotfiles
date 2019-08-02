@@ -179,6 +179,14 @@ function pep8 () {
     fi
 }
 
+function s() {
+    if [ ! -z $1 ]; then
+        git status -s | g $1
+    else
+        git status -s
+    fi
+}
+
 function scaffold() {
     # creates the initial files for a project
     # usage: scaffold project_type [path]
