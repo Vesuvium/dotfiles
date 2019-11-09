@@ -124,7 +124,7 @@ function c() {
     if [ ! -z $1 ]; then
         if [ -d ~/dev/$1 ]; then
             cd ~/dev/$1
-            if [ -d $1 ]; then
+            if [ -d $1 ] && [ ! -f pyproject.toml ]; then
                 cd $1
             fi
         fi
