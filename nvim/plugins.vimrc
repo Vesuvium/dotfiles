@@ -60,6 +60,9 @@ Plug 'cseelus/vim-colors-tone'
 Plug 'nightsense/cosmic_latte'
 Plug 'szorfein/fromthehell.vim'
 Plug 'maksimr/Lucius2'
+Plug 'ciaranm/inkpot'
+Plug 'challenger-deep-theme/vim'
+Plug 'whatyouhide/vim-gotham'
 
 
 call plug#end()
