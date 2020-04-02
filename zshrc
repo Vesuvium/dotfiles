@@ -117,6 +117,7 @@ function vcp {
     touch js/components/$1/${component}Tests.js
 }
 
+
 function dockerbash (){
     docker exec -i -t $1 /bin/bash
 }
@@ -134,6 +135,22 @@ function dotfiles(){
     cp -r nvim/* ~/.config/nvim/
     cp tmux.conf ~/.tmux.conf
 }
+
+
+function dsa(){
+    docker stop $(docker ps -q)
+}
+
+
+function dra(){
+    docker rm -v $(docker ps -a -q)
+}
+
+
+function drai(){
+    docker rmi $(docker images -q)
+}
+
 
 function keygen(){
     # usage: keygen application user@email.com

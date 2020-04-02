@@ -173,6 +173,22 @@ function dotfiles(){
     cp tmux.conf ~/.tmux.conf
 }
 
+
+function dsa(){
+    docker stop $(docker ps -q)
+}
+
+
+function dra(){
+    docker rm -v $(docker ps -a -q)
+}
+
+
+function drai(){
+    docker rmi $(docker images -q)
+}
+
+
 function m() {
     # shorthand for git commit -m
     if [ ! -z $2 ]; then
