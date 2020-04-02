@@ -114,6 +114,10 @@ function vcp {
     touch js/components/$1/${component}Tests.js
 }
 
+function dockerbash (){
+    docker exec -i -t $1 /bin/bash
+}
+
 
 function dotfiles(){
     # Installs dotfiles or updates them

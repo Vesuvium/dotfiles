@@ -154,6 +154,12 @@ function cleanup(){
   mv unduped_history ~/.bash_history
 }
 
+
+function dockerbash (){
+    docker exec -i -t $1 /bin/bash
+}
+
+
 function dotfiles(){
     # Installs dotfiles or updates them
     cp bashrc ~/.bashrc
