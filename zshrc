@@ -64,6 +64,12 @@ function activate() {
     fi
 }
 
+
+function atom-packages() {
+    apm list | sed '1,/Community Packages/d' | awk '{print $2}' | awk -F '@' '{print $1}'
+}
+
+
 # Decode base64 string
 function b64decode (){
     echo $1 | base64 --decode;
