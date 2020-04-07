@@ -276,6 +276,21 @@ function serve() {
 }
 
 
+function sysinfo() {
+    elixir --version | grep Elixir | awk '{print $1 $2}'
+    echo "Node $(node --version)"
+    ruby --version | awk '{print $1, $2}'
+    python --version
+    python3 --version
+    rustc --version | awk '{print $1, $2}'
+    rustup --version | awk '{print $1, $2}'
+    echo '\n'
+    docker --version | awk '{print $1, substr($3, 1, length($3)-1)}'
+    docker-compose --version | awk '{print $1, substr($3, 1, length($3)-1)}'
+    terraform --version
+}
+
+
 function words() {
     find $1 -name '*.md' -print0 | wc -w --files0-from=-
 }
