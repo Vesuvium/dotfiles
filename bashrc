@@ -66,6 +66,7 @@ alias h='history'
 alias g='grep'
 alias gh='history | grep'
 alias lh="ls -lh"
+aliat t="touch"
 alias blast="python setup.py install > /dev/null 2>&1; pytest -q"
 alias update='apt-get update'
 alias upgrade='apt-get upgrade'
