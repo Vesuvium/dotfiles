@@ -32,6 +32,7 @@ alias g="grep"
 alias h="history"
 alias gh="history | grep"
 alias lh="ls -lh"
+alias t="touch"
 alias update='apt-get update'
 alias upgrade='apt-get upgrade'
 alias distupgrade='apt-get dist-upgrade'
