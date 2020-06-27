@@ -101,7 +101,7 @@ function c() {
 function clone() {
   # Clone a git repository
   if [[ ! $1 =~ "/" ]]; then
-    repo=Vesuvium/$1
+    repo=nomorepanic/$1
   else
     repo=$1
   fi
