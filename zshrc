@@ -98,6 +98,14 @@ function c() {
     fi
 }
 
+function cat() {
+    if [ ! command -v batcat ]; then
+        cat $@;
+    else
+        batcat $@;
+    fi
+}
+
 function clone() {
   # Clone a git repository
   if [[ ! $1 =~ "/" ]]; then
@@ -120,7 +128,7 @@ function vcp {
     component=$1
     mkdir -p js/components/$1
     touch js/components/$1/$component.vue
-    touch js/components/$1/$component.js
+    touch j ]components/$1/$component.js
     touch js/components/$1/${component}Tests.js
 }
 
