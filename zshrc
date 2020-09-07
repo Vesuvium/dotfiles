@@ -99,10 +99,12 @@ function c() {
 }
 
 function cat() {
-    if [ ! command -v batcat &> /dev/null ]; then
-        cat $@;
-    else
+    if [ $(command -v bat) ]; then
+        bat $@;
+    elif [ $(command -v batcat) ]; then
         batcat $@;
+    else
+        cat $@;
     fi
 }
 
