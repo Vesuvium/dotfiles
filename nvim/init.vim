@@ -8,6 +8,7 @@ source $HOME/.config/nvim/keys.vimrc
 
 set noshowmode
 set termguicolors
+set completeopt-=preview
 
 colo OceanicNext
 
