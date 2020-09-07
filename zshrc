@@ -219,6 +219,15 @@ function rt () {
     fi
 }
 
+function rebase() {
+    git stash --include-untracked;
+    git checkout master;
+    git pull;
+    git checkout $1;
+    git rebase master;
+    git push -f;
+}
+
 
 function s() {
     if [ ! -z $1 ]; then
