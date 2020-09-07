@@ -29,6 +29,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'robbles/logstash.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-cucumber'
+Plug 'cespare/vim-toml'
 
 " Prose
 Plug 'junegunn/limelight.vim'
