@@ -30,6 +30,7 @@ Plug 'robbles/logstash.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-cucumber'
 Plug 'cespare/vim-toml'
+Plug 'zah/nim.vim'
 
 " Prose
 Plug 'junegunn/limelight.vim'
