@@ -30,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 # Aliases for commands
 alias g="grep"
 alias h="history"
-alias gh="history | grep"
+alias grh="history | grep"
 alias lh="ls -lh"
 alias t="touch"
 alias update='apt-get update'
