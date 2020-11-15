@@ -5,6 +5,19 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME/.cargo/bin:$PATH
 # Path to your oh-my-zsh installation.
   export ZSH=$HOME/.oh-my-zsh
 
+
+# Ignore duplicate lines in history
+setopt EXTENDED_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_FIND_NO_DUPS
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_BEEP
+setopt PUSHD_IGNORE_DUPS
+
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
