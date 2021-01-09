@@ -50,6 +50,7 @@ Plug 'mhartington/oceanic-next'
 Plug 'axvr/photon.vim'
 Plug 'pgdouyon/vim-yin-yang'
 Plug 'whatyouhide/vim-gotham'
+Plug 'saltdotac/citylights.vim'
 
 
 call plug#end()
