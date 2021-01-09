@@ -42,28 +42,13 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
 
 " Themes
-Plug 'ajh17/spacegray.vim'
 Plug 'arcticicestudio/nord-vim'
-Plug 'badacadabra/vim-archery'
-Plug 'cseelus/vim-colors-tone'
 Plug 'junegunn/seoul256.vim'
 Plug 'mhinz/vim-janah'
-Plug 'reedes/vim-colors-pencil'
-Plug 'altercation/vim-colors-solarized'
 Plug 'AlessandroYorba/Alduin'
-Plug 'owickstrom/vim-colors-paramount'
 Plug 'mhartington/oceanic-next'
 Plug 'axvr/photon.vim'
 Plug 'pgdouyon/vim-yin-yang'
-Plug 'abnt713/vim-hashpunk'
-Plug 'smallwat3r/vim-hashpunk-sw'
-Plug 'beikome/cosme.vim'
-Plug 'cseelus/vim-colors-tone'
-Plug 'nightsense/cosmic_latte'
-Plug 'szorfein/fromthehell.vim'
-Plug 'maksimr/Lucius2'
-Plug 'ciaranm/inkpot'
-Plug 'challenger-deep-theme/vim'
 Plug 'whatyouhide/vim-gotham'
 
 
