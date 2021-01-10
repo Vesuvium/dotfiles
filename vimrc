@@ -151,6 +151,11 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+autocmd Filetype elixir setlocal softtabstop=2 shiftwidth=2
+autocmd Filetype javascript setlocal softtabstop=2 shiftwidth=2
+autocmd Filetype pug setlocal softtabstop=2  shiftwidth=2
+autocmd Filetype scss setlocal softtabstop=2 shiftwidth=2
+
 " Indentation settings for using hard tabs for indent. Display tabs as
 " four characters wide.
 "set shiftwidth=4
