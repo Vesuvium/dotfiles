@@ -1,5 +1,6 @@
-'.platform-linux atom-text-editor':
+'.workspace':
   'alt-shift-a': 'bookmarks:toggle-bookmark'
-
-'.platform-win32, .platform-linux':
   'ctrl-shift-G': 'github:toggle-git-tab'
+
+ '.platform-darwin .workspace':
+  'cmd-shift-A': 'application:add-project-folder'
