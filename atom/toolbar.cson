@@ -1,23 +1,23 @@
 [
     {
         type: 'button'
-        icon: 'navicon-round'
         callback: 'command-palette:toggle'
         tooltip: 'Toggle Command Palette'
+        icon: 'ios-compass'
         iconset: 'ion'
     }
     {
         type: 'button'
         tooltip: 'Open Settings View'
         callback: 'settings-view:open'
-        icon: 'gear-a'
+        icon: 'ios-cog'
         iconset: 'ion'
     }
     {
         type: 'button'
-        icon: 'wrench'
         callback: 'flex-tool-bar:edit-config-file'
         tooltip: 'Open tool bar configuration'
+        icon: 'ios-hammer'
         iconset: 'ion'
     }
     {
@@ -27,21 +27,21 @@
         type: 'button'
         tooltip: 'Open File'
         callback: 'application:open-file'
-        icon: 'document-text'
+        icon: 'ios-document'
         iconset: 'ion'
     }
     {
         type: 'button'
-        icon: 'document'
         callback: 'application:new-file'
         tooltip: 'New File'
+        icon: 'ios-document'
         iconset: 'ion'
     }
     {
         type: 'button'
         tooltip: 'Open Folder'
         callback: 'application:add-project-folder'
-        icon: 'folder'
+        icon: 'ios-folder'
         iconset: 'ion'
     }
     {
@@ -49,9 +49,9 @@
     }
     {
         type: 'button'
-        icon: 'search'
         callback: 'find-and-replace:show'
         tooltip: 'Find in Buffer'
+        icon: 'ios-search'
         iconset: 'ion'
     }
     {
@@ -65,20 +65,20 @@
         type: 'button'
         tooltip: 'Fold all'
         callback: 'editor:fold-all'
-        icon: 'compress'
-        iconset: 'fa'
+        icon: 'ios-contract'
+        iconset: 'ion'
     }
     {
         type: 'button'
-        icon: 'expand'
         callback: 'editor:unfold-all'
         tooltip: 'Unfold all'
-        iconset: 'fa'
+        icon: 'ios-move'
+        iconset: 'ion'
     }
     {
         type: 'button'
         tooltip: 'Show all bookmarks'
-        icon: 'bookmark'
+        icon: 'ios-bookmark'
         iconset: 'ion'
         callback: 'bookmarks:view-all'
 
@@ -97,8 +97,8 @@
         type: 'button'
         tooltip: 'Toggle Fullscreen'
         callback: 'window:toggle-full-screen'
-        icon: 'arrows-alt'
-        iconset: 'fa'
+        icon: 'ios-expand'
+        iconset: 'ion'
     }
     {
         type: 'spacer'
@@ -106,7 +106,7 @@
     {
         type: 'button'
         tooltip: 'Open git tab'
-        icon: 'social-github'
+        icon: 'logo-github'
         iconset: 'ion'
         callback: 'github:toggle-git-tab'
     }
@@ -120,9 +120,10 @@
 
     {
         type: 'button'
-        icon: 'markdown'
         callback: 'markdown-preview:toggle'
         disable: '!markdown'
+        icon: 'logo-markdown'
+        iconset: 'ion'
     }
     {
         type: 'spacer'
@@ -130,14 +131,15 @@
     {
         type: 'button'
         tooltip: 'About Atom'
-        icon: 'info'
+        icon: 'ios-information-circle'
+        iconset: 'ion'
         callback: 'application:about'
     }
     {
         type: 'button'
         tooltip: 'Close Atom'
-        icon: 'power-off'
-        iconset: 'fa'
+        icon: 'ios-power'
+        iconset: 'ion'
         callback: 'core:close'
         disable: '!markdown'
     }
